@@ -80,11 +80,11 @@ public class MyProcessor extends AbstractProcessor {
         .build();
 
         static final PropertyDescriptor ATLAS_URL = new PropertyDescriptor.Builder()
-        .name("Atlas Base URL (<PROTOCOL>://<HOST>:<PORT>")
-        .description("The URL for the Atlas API (base url) ending ")
+        .name("Atlas Base URL")
+        .description("The URL for the Atlas API (base url) formatted as  <PROTOCOL>://<HOST>:<PORT>")
         .addValidator(StandardValidators.NON_EMPTY_VALIDATOR)
         .expressionLanguageSupported(ExpressionLanguageScope.FLOWFILE_ATTRIBUTES)
-        .defaultValue("${qualifiedname}")
+        .defaultValue("")
         .required(true)
         .build();
 
