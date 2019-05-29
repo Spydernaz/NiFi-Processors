@@ -14,9 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package spyder.processors.addAtlasTag;
-
-import static org.junit.Assert.assertEquals;
+package SPYDER.reconciliation.processors.encodings;
 
 import org.apache.nifi.util.TestRunner;
 import org.apache.nifi.util.TestRunners;
@@ -24,18 +22,18 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class MyProcessorTest {
+public class Plain_Text_DelimiterTest {
 
     private TestRunner testRunner;
 
     @Before
     public void init() {
-        testRunner = TestRunners.newTestRunner(MyProcessor.class);
+        testRunner = TestRunners.newTestRunner(Plain_Text_Delimiter.class);
     }
 
     @Test
     public void testProcessor() {
-        assertEquals(1, 1);
+
     }
 
 }

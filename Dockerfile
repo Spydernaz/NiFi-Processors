@@ -4,7 +4,7 @@ FROM apache/nifi:1.9.2
 
 ARG VERSION=1.0
 ### Copy the latest Build 
-COPY ./Atlas/TagEntity/SPYDER/nifi-addAtlasTag-nar/target/nifi-addAtlasTag-nar-${VERSION}.nar /opt/nifi/nifi-current/lib/
+COPY ./encodings/nifi-encodings-nar/target/nifi-encodings-nar-${VERSION}.nar /opt/nifi/nifi-current/lib/
 
 
 
